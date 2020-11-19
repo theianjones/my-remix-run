@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, Scripts, Styles, Routes, useGlobalData } from "@remix-run/react";
-
+import {Link} from 'react-router-dom'
 export default function App() {
   let data = useGlobalData();
 
@@ -12,6 +12,7 @@ export default function App() {
         <Styles />
       </head>
       <body>
+        <Link to="/gists">Gists</Link>
         <Routes />
         <Scripts />
         <footer>
